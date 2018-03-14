@@ -28,7 +28,7 @@ deploy-to-oke:
         name: "wait to delete namespace"
     - 
       kubectl: 
-        command: "apply -f $WERCKER_ROOT/kubernetes-namespace.yml"
+        command: "create namespace $WERCKER_APPLICATION_OWNER_NAME"
         insecure-skip-tls-verify: true
         name: "create namespace"
         server: $KUBERNETES_MASTER
