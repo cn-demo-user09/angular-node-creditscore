@@ -1,4 +1,4 @@
-describe('Teszt UI: browser title', function() {
+describe('Test UI: browser title', function() {
   it('AngularJS + NodeJS', function() {
     browser.get('http://localhost:3000/');
 
